@@ -17,6 +17,7 @@
 #include <sstream>
 #include <cmath>
 #include <cstdlib>
+#include <ctime>
 using namespace std;
 
 
@@ -37,6 +38,7 @@ int main() {
     cout << "Hello " << name << ", welcome to your math tutor." << endl;
     cout << "Let's begin" << endl << endl;
 
+    srand(time(0));
     double useranswer;
     double ans;
     int rando2 = ((rand() % 10) + 1);
