@@ -1,15 +1,10 @@
- /********************************
-    Program.......:MathTutorV1
-    Programmers...:Cash Vollertsen and
-    Date..........:9/22/25
-    Github Repo...:
-    Description...:
-
-
-
-
-
-    **********************************************/
+/****************************************************************************************************************
+Program.......:MathTutorV1
+Programmers...:Cash Vollertsen and Ethan Hoge
+Date..........:9/22/25
+Github Repo...:https://github.com/Cash-Vollertsen/Math-Tutor-V2/tree/main
+Description...:An easy math tutor, meant to help other learn basic math equations better and more efficiently.
+**************************************************************************************************************/
 
 #include <chrono>
 #include <iostream>
