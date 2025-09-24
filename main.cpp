@@ -2,8 +2,9 @@
     Program.......:MathTutorV1
     Programmers...:Cash Vollertsen and
     Date..........:9/22/25
-    Github Repo...:
-    Description...:
+    Github Repo...:https://github.com/Cash-Vollertsen/Math-Tutor-V2
+    Description...:This is a much more complex math tutor than v1. We will have randomly generated numbers for each
+    and a random math operator. Though for subtraction there will be no negatives numbers and divisons won't be fractions.
 
 
 
@@ -56,43 +57,47 @@ int main() {
 
 
     switch (mathvar) {
-        case 1:
-          ans = rando1 + rando2;
-          cout << "Pleaes solve this math expression " << rando1 << " + " << rando2 << endl;
-                break;
+        case 1: {
+            ans = rando1 + rando2;
+            char letter = '+';
+            break;
+        }
 
-        case 2:
+        case 2: {
             if (rando1 < rando2) {
                 ans = rando2 - rando1;
-                cout << "Please solve this math expression " << rando2 << " - " << rando1 << endl;
             }
             else if (rando2 < rando1) {
                 ans = rando1 - rando2;
-                cout << "Please solve this math expression " << rando1 << " - " << rando2 << endl;
             }
-                break;
+            char sub = '-';
+            break;
+        }
 
-        case 3:
+        case 3: {
             ans = rando1 * rando2;
-        cout << "Pleaes solve this math expression " << rando1 << " * " << rando2 << endl;
-                break;
+            char time = '*';
+            break;
+        }
 
-        case 4:
-            ans = rando1 / rando2;
-        cout << "Pleaes solve this math expression " << (rando1 * rando2) << " / " << rando2 << endl;
-                break;
+        case 4: {
+            ans = (rando2 * rando1) / rando2;
+            char div = '/';
+            break;
+        }
     }
+
+
+
+
+
     cin >> useranswer;
 
-    if (useranswer == ans) {
-        cout << "Good work answering the problem. You have a bright future ahead of you." << endl;
-    }
-    else if (useranswer != ans)
-        cout << "Looks like you need to look at the problem again." << endl;
+
 
 
     cout << endl;
-    cout << "Thank you for playing the game!" << endl;
+    cout << "Thank you for playing our game!" << endl;
 
 
 
