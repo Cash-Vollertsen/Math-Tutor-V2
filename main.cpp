@@ -22,6 +22,18 @@ using namespace std;
 
 
 int main() {
+    double useranswer;
+    double ans;
+    int rando2 = 0;
+    int rando1= 0;
+    int mathvar = 0;
+
+    srand(time(0));
+    rando2 = ((rand() % 10) + 1);
+    rando1= ((rand() % 10) + 1);
+    mathvar = ((rand() % 4) + 1);
+
+
     cout << "************************************************************************************" << endl;
     cout << "*                         Welcome to Silly Simple Math Tutor V1                    *" << endl;
     cout << "************************************************************************************" << endl;
@@ -39,11 +51,7 @@ int main() {
     cout << "Let's begin" << endl << endl;
 
     srand(time(0));
-    double useranswer;
-    double ans;
-    int rando2 = ((rand() % 10) + 1);
-    int rando1= ((rand() % 10) + 1);
-    int mathvar = ((rand() % 4) + 1);
+
 
 
 
@@ -71,7 +79,7 @@ int main() {
 
         case 4:
             ans = rando1 / rando2;
-        cout << "Pleaes solve this math expression " << rando1 << " / " << rando2 << endl;
+        cout << "Pleaes solve this math expression " << (rando1 * rando2) << " / " << rando2 << endl;
                 break;
     }
     cin >> useranswer;
