@@ -5,11 +5,6 @@
     Github Repo...:https://github.com/Cash-Vollertsen/Math-Tutor-V2
     Description...:This is a much more complex math tutor than v1. We will have randomly generated numbers for each
     and a random math operator. Though for subtraction there will be no negatives numbers and divisons won't be fractions.
-
-
-
-
-
     **********************************************/
 
 #include <chrono>
