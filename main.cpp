@@ -42,10 +42,10 @@ int main() {
 
     string name;
 
-    cout << "Hey this is your Simple Silly Math Tutor, What's your name." << endl;
+    cout << "Hey this is your Simple Silly Math Tutor, What's your name?" << endl;
     getline(cin, name );
     cout << "Hello " << name << ", welcome to your math tutor." << endl;
-    cout << "Let's begin" << endl << endl;
+    cout << "Let's begin!" << endl << endl;
 
     srand(time(0));
 
