@@ -14,7 +14,8 @@
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
-using namespace std;
+#include <bits/ranges_uninitialized.h>
+ using namespace std;
 
 
 int main() {
@@ -22,13 +23,13 @@ int main() {
     double ans;
     int rando2 = 0;
     int rando1= 0;
-    int mathvar = 0;
+    int mathVar = 0;
     string mathSymbol;
 
     srand(time(0));
     rando2 = ((rand() % 10) + 1);
     rando1= ((rand() % 10) + 1);
-    mathvar = ((rand() % 4) + 1);
+    mathVar = ((rand() % 4) + 1);
 
 
     cout << "************************************************************************************" << endl;
@@ -47,12 +48,8 @@ int main() {
     cout << "Hello " << name << ", welcome to your math tutor." << endl;
     cout << "Let's begin!" << endl << endl;
 
-    srand(time(0));
 
-
-
-
-    switch (mathvar) {
+    switch (mathVar) {
         case 1: {
             ans = rando1 + rando2;
             char letter = '+';
@@ -86,11 +83,17 @@ int main() {
             mathSymbol = div;
             break;
         }
+
+        default: {
+            cout << "Invalid question type: " << mathVar << endl;
+            cout << "Program ended with an error -1" << endl;
+            cout << "Please report this error to Cash Vollertsen and/or Ethan Hoge" << endl;
+            return -1;
+        }
     }
 
+
     cout << name << " what is "<< rando1 << mathSymbol << rando2 << "?" << endl;
-
-
 
     cin >> useranswer;
 
@@ -104,10 +107,6 @@ int main() {
         cout << endl;
         cout << "Keep calm and try the game again to improve your math skills!" << endl;
     }
-
-
-
-
 
     return 0;
 }
