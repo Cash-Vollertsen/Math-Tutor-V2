@@ -15,51 +15,67 @@ user if they are correct or incorrect.
 ## Console Output Example
 ```
 IF CORRECT:
-************************************************************************************
-*                         Welcome to Silly Simple Math Tutor V1                    *
-************************************************************************************
+**************************************************************************************
+                     __  __       _   _       _____      _
+                    |  \/  | __ _| |_| |__   |_   _|   _| |_ ___  _ __
+                    | |\/| |/ _` | __| '_ \    | || | | | __/ _ \| '__|
+                    | |  | | (_| | |_| | | |   | || |_| | || (_) | |
+                    |_|  |_|\__,_|\__|_| |_|   |_| \__,_|\__\___/|_|
+**************************************************************************************
+*                       Welcome to this Simple Silly Math Tutor!!                    *
+**************************************************************************************
 Fun Math Facts
    -Math wasn't created at any one time but developed over thousands of years.
    -Forty is the only number that is spelt with letters arranged in alphabetical order.
    -Every odd number has an e in it.
 Hey this is your Simple Silly Math Tutor, What's your name?
-Ethan Hoge
+Ethan
 
-Hello Ethan Hoge, welcome to your math tutor.
+Hello Ethan, welcome to your math tutor.
 Let's begin!
 
-Ethan Hoge what is 7-3?
-4
+Ethan what is 7+7?
+14
 
-Congrats! You're amazing at math equations Ethan Hoge!
+Congrats! You're amazing at math equations Ethan!
 
 Thank you for playing our game!
 
+Process finished with exit code 0
 
 ***************************************************************************************
 
 
 IF INCORRECT:
-************************************************************************************
-*                         Welcome to Silly Simple Math Tutor V1                    *
-************************************************************************************
+
+**************************************************************************************
+                     __  __       _   _       _____      _
+                    |  \/  | __ _| |_| |__   |_   _|   _| |_ ___  _ __
+                    | |\/| |/ _` | __| '_ \    | || | | | __/ _ \| '__|
+                    | |  | | (_| | |_| | | |   | || |_| | || (_) | |
+                    |_|  |_|\__,_|\__|_| |_|   |_| \__,_|\__\___/|_|
+**************************************************************************************
+*                       Welcome to this Simple Silly Math Tutor!!                    *
+**************************************************************************************
 Fun Math Facts
    -Math wasn't created at any one time but developed over thousands of years.
    -Forty is the only number that is spelt with letters arranged in alphabetical order.
    -Every odd number has an e in it.
 Hey this is your Simple Silly Math Tutor, What's your name?
-Ethan Hoge
+Ethan
 
-Hello Ethan Hoge, welcome to your math tutor.
+Hello Ethan, welcome to your math tutor.
 Let's begin!
 
-Ethan Hoge what is 6-1?
-3
+Ethan what is 6-10?
+12
 
-Seems like you got this answer wrong Ethan Hoge.
-The correct answer was 5.
+Seems like you got this answer wrong Ethan.
+The correct answer was 4.
 
 Keep calm and try the game again to improve your math skills!
+
+Process finished with exit code 0
 ```
 
 ## Maintainers
