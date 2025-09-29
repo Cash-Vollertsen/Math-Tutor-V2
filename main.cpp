@@ -25,11 +25,18 @@ int main() {
     int rando1= 0;
     int mathVar = 0;
     string mathSymbol;
+    int temp = 0;
+    char letter = '+';
+    char sub = '-';
+    char mult = '*';
+    char div = '/';
 
     srand(time(0));
     rando2 = ((rand() % 10) + 1);
     rando1= ((rand() % 10) + 1);
     mathVar = ((rand() % 4) + 1);
+
+
     cout << "**************************************************************************************" << endl;
     cout << "                     __  __       _   _       _____      _             " << endl;
     cout << "                    |  \\/  | __ _| |_| |__   |_   _|   _| |_ ___  _ __ " << endl;
@@ -56,34 +63,30 @@ int main() {
     switch (mathVar) {
         case 1: {
             ans = rando1 + rando2;
-            char letter = '+';
             mathSymbol = letter;
             break;
         }
 
         case 2: {
             if (rando1 < rando2) {
-                ans = rando2 - rando1;
+                temp = rando1;
+                rando1 = rando2;
+                rando2 = temp;
             }
-            else if (rando2 < rando1) {
                 ans = rando1 - rando2;
-            }
-            char sub = '-';
             mathSymbol = sub;
             break;
         }
 
         case 3: {
             ans = rando1 * rando2;
-            char time = '*';
-            mathSymbol = time;
+            mathSymbol = mult;
             break;
         }
 
         case 4: {
-            rando1 = (rando2 * rando1);
-            ans = rando1 / rando2;
-            char div = '/';
+            ans = rando1;
+            rando1 *= rando2;
             mathSymbol = div;
             break;
         }
